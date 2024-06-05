@@ -1,0 +1,112 @@
+/* Estilos globais */
+body {
+    background-color: black;
+    margin: 0; /* Remove margens padrão */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Estilos para o cabeçalho e menu */
+header main {
+    background-color: red;
+    color: white;
+    text-shadow: black 1px 3px 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.Menus {
+    display: flex;
+    gap: 20px;
+}
+
+.Menus div {
+    cursor: pointer;
+}
+
+/* Estilos para a seção de imagens */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.logo {
+    filter: blur(5px);
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    max-width: 250px; /* Definindo uma largura máxima para as imagens */
+}
+
+/* Estilos para o rodapé */
+footer {
+    position: fixed; /* Corrige o footer na parte inferior da página */
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    font-family: 'Grenze Gotisch';
+    background-color: #f80505;
+    text-shadow: black 1px 3px 1px;
+    text-align: center;
+    color: aliceblue;
+    padding: 10px 0;
+}
+
+/* Media Queries para responsividade */
+
+/* Estilos para tamanhos de tela pequenos (até 360px de largura) */
+@media (max-width: 360px) {
+    .Menus {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo img {
+        max-width: 150px;
+    }
+}
+
+/* Estilos para tamanhos de tela médios (361px a 480px de Largura) */
+@media (min-width: 361px) and (max-width: 480px) {
+    .Menus {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo img {
+        max-width: 200px;
+    }
+}
+
+/* Estilos para tamanhos de tela grandes (481px a 768px de largura) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .logo img {
+        max-width: 250px;
+    }
+}
+
+/* Estilos para tablet Retrato (769px a 1024px de largura) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Adicione estilos específicos para tablet retrato, se necessário */
+}
+
+/* Estilos para tamanhos de tela em paisagem (1025px a 1280px de largura) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* Adicione estilos específicos para telas em paisagem, se necessário */
+}
+
+/* Estilos para desktop comum (1281px a 1440px de largura) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+    /* Adicione estilos específicos para desktops comuns, se necessário */
+}
+
+/* Estilos para telas grandes (acima de 1441px de largura)
